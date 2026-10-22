@@ -84,8 +84,19 @@ export default function List() {
           )}
         </div>
       ) : (
-        <Link to="/login">로그인</Link>
-      )} 
+         <div>
+          <button 
+            onClick={() => navigate('/login')}>
+            로그인
+          </button>
+
+          <button 
+            onClick={() => navigate('/signup')}>
+            Email 회원가입
+          </button>
+        </div>
+        )} 
       </div>
+      
   )
 }
